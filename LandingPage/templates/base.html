@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href={% static 'css/base.css' %}>
+        {% block extra_head %}
+
+        {% endblock extra_head %}
+    </head>
+    <body>
+        <div id="header">
+            {% block header %}
+            
+            {% endblock header %}
+        </div>
+        <div id="navbar">
+            {% block navbar %}
+            {% block nav_home %}<a href={% url 'index' %}>Home</a>{% endblock nav_home %}
+            <a>Blog</a>
+            {% endblock navbar %}
+        </div>
+        <div id="body">
+            {% block body %}
+            BASE BODY
+            {% endblock body %}
+        </div>
+        <div id="footer">
+            {% block footer %}
+
+            {% endblock footer %}
+        </div>
+    </body>
+</html>
