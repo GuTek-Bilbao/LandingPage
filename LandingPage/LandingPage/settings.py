@@ -25,7 +25,7 @@ SECRET_KEY = 'fnl(#%&6_&bsd^8vlbs$3_r!jt8=6$=c$o&%ag8gq7w(x2-8e0'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1','.gutekbilbao.com'] # NOTE 127.0.0.1 only for testing puposes
 
 
 # Application definition
