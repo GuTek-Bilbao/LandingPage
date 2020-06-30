@@ -16,7 +16,7 @@
         <div id="navbar">
             {% block navbar %}
             {% block nav_home %}<a href={% url 'index' %}>Home</a>{% endblock nav_home %}
-            <a>Blog</a>
+            {% block nav_blog %}<a href={% url 'blog' %}>Blog</a>{% endblock nav_blog %}
             {% endblock navbar %}
         </div>
         <div id="body">
