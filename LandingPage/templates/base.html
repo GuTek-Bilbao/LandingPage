@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 <!DOCTYPE html>
 <html>
     <head>
@@ -15,8 +16,8 @@
         </div>
         <div id="navbar">
             {% block navbar %}
-            {% block nav_home %}<a href={% url 'index' %}>Home</a>{% endblock nav_home %}
-            {% block nav_blog %}<a href={% url 'blog' %}>Blog</a>{% endblock nav_blog %}
+            <a href={% url 'index' %} class="{% block nav_home_class %}{% endblock nav_home_class %}">{% blocktrans %}Home{% endblocktrans %}</a>
+            <a href={% url 'blog' %} class="{% block nav_blog_class %}{% endblock nav_blog_class %}">{% blocktrans %}Blog{% endblocktrans %}</a>
             {% endblock navbar %}
         </div>
         <div id="body">
