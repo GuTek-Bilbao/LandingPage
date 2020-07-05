@@ -11,9 +11,9 @@ STATUS = (
 )
 
 LANG = (
-    ('ES', "Español"),
-    ('EN', "English"),
-    ('EU', "Euskara")
+    ('es', "Español"),
+    ('en', "English"),
+    ('eu', "Euskara")
 )
 
 
